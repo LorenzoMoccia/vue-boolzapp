@@ -45,7 +45,7 @@ body{
 
 .profile-name{
     padding-left: 5px;
-    line-height: 45px;
+    line-height: 50px;
 }
 
 .icon-container{
@@ -60,4 +60,27 @@ i{
     width: 50px;
     height: 50px;
     border-radius: 50%;
+}
+
+.notification-container{
+    width: 535px;
+    padding: 10px;
+    background-color: #8deafc;
+    display: flex;
+}
+
+.notification-circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+#icon-bell{
+    line-height: 35px;
+}
+
+.notification{
+    padding: 10px;
+    line-height: 15px;
 }
