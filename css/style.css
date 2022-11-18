@@ -110,6 +110,7 @@ i{
     padding: 10px;
     display: flex;
 }
+
 .contact-img-container{
     width: 60px;
     height: 60px;
@@ -121,3 +122,12 @@ i{
     height: 60px;
     border-radius: 50%;
 }
+
+.contact-name-container{
+    padding: 10px;
+}
+
+.last-message-text{
+    color: grey;
+ }
+ 

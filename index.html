@@ -66,7 +66,7 @@
 
         <!----------CONTACTS--------------------->
         <ul>
-            <li v-for="contact in contacts">
+            <li v-for="(contact, index) in contacts">
                 <div class="contact-container debug">
                     <div class="contact-img-container">
                         <img :src="`img/avatar${contact.avatar}.jpg`" alt="" class="contact-img">
@@ -74,6 +74,7 @@
 
                     <div class="contact-name-container">
                         <h4>{{contact.name}}</h4>
+                        <small class="last-message-text">{{contact.messages[contact.messages.length-1].message}}</small>
                     </div>
                 </div>
             </li>
