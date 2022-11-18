@@ -105,3 +105,14 @@ i{
 #searchbar{
     width: 100%;
 }
+
+.contact-container{
+    padding: 10px;
+    display: flex;
+}
+.contact-img-container{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
