@@ -66,14 +66,14 @@
 
         <!----------CONTACTS--------------------->
         <ul>
-            <li>
+            <li v-for="contact in contacts">
                 <div class="contact-container debug">
                     <div class="contact-img-container debug">
 
                     </div>
 
                     <div class="contact-name-container">
-                        <h4>Ciao</h4>
+                        <h4>{{contact.name}}</h4>
                     </div>
                 </div>
             </li>
