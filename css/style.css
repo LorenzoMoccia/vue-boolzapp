@@ -96,6 +96,7 @@ i{
 .searchbar-container{
     padding: 5px;
     display: flex;
+    background-color: white;
 }
 
 .search-icon{
@@ -115,6 +116,7 @@ i{
 .contact-container{
     padding: 10px;
     display: flex;
+    background-color: white;
 }
 
 .contact-img-container{
