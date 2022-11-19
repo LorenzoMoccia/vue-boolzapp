@@ -127,7 +127,9 @@
                     <li v-for="text in contacts[currentContact].messages">
                         <div class="message-container debug" v-bind:class = "(text.status === 'sent')?'message-sent':'message-received'">
                             {{text.message}}
-                            <small class="message-time">{{text.date}}</small>
+                            <small class="message-time">
+                                {{text.formattedDate}}
+                            </small>
                         </div>
                     </li>
                     <!--/MESSAGE CONTAINER-->
