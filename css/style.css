@@ -180,3 +180,8 @@ i{
     display: flex;
     justify-content: space-around;
 }
+
+.main-chat-container{
+    height: 773px;
+    background: url("../img/mine.jpg");
+}
