@@ -151,6 +151,7 @@ i{
     height: 115px;
     background-color: #eaeaea;
     padding: 10px;
+    display: flex;
 }
 
 .image-current-contact{
@@ -163,4 +164,9 @@ i{
     border-radius: 50%;
     width: 60px;
     height: 60px;
+}
+
+.currentcontact-name-container{
+    line-height: 30px;
+    padding: 10px;
 }
