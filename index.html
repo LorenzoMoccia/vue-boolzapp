@@ -66,7 +66,7 @@
 
         <!----------CONTACTS--------------------->
         <ul class="contact-list">
-            <li v-for="(contact, index) in contacts">
+            <li v-for="(contact, index) in contacts" @click="selectContactClick(index)">
                 <div class="contact-container debug">
                     <div class="contact-img-container">
                         <img :src="`img/avatar${contact.avatar}.jpg`" alt="" class="contact-img">
@@ -87,8 +87,8 @@
     <main>
         <div class="main-container debug">
             <div class="main-header">
-                <div class="chat-contact-img debug">
-
+                <div class="image-current-contact">
+                    <img class="current-contact-img" :src="`img/avatar${contacts[currentContact].avatar}.jpg`" alt="">
                 </div>
             </div>
         </div>
