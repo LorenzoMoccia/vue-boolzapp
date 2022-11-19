@@ -8,6 +8,7 @@ const { createApp } = Vue
         
         currentContact: 0,
 
+        
         contacts: [
             {
                 name: 'Michele',
@@ -177,7 +178,7 @@ const { createApp } = Vue
 
 
     methods:{
-
+        
         selectContactClick(i){
             this.currentContact = i;
         }

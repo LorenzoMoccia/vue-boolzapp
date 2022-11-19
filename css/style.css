@@ -184,4 +184,27 @@ i{
 .main-chat-container{
     height: 773px;
     background: url("../img/mine.jpg");
+    padding: 70px;
+}
+
+.message-list{
+    list-style: none;
+}
+
+.message-container{
+    width: 320px;
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.message-sent{
+    background-color: #85f9ba;
+    margin-left: 65%;
+
+}
+
+.message-received{
+    background-color: white ;
 }

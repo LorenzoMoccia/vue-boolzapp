@@ -104,7 +104,7 @@
                     <small>Ultimo accesso oggi alle 12:00</small>
                 </div>
                 <!-----/CONTAINER TITLE CURRENT CONTACT------>
-                
+
              </div>
              <!--------------------/CURRENT CONTACT CONTAINER------------>
             
@@ -121,7 +121,17 @@
 
             <!----------------CONTAINER MAIN CHAT------------->
             <div class="main-chat-container debug">
+                <ul class="message-list">
 
+                    <!--MESSAGE CONTAINER-->
+                    <li v-for="text in contacts[currentContact].messages">
+                        <div class="message-container debug" v-bind:class = "(text.status === 'sent')?'message-sent':'message-received'">
+                            {{text.message}}
+                            <small class="message-time">{{text.date}}</small>
+                        </div>
+                    </li>
+                    <!--/MESSAGE CONTAINER-->
+                </ul>
             </div>
             <!----------------/CONTAINER MAIN CHAT------------->
         </div>
