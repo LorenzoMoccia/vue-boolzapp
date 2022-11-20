@@ -8,6 +8,7 @@ const { createApp } = Vue
         
         currentContact: 0,
         
+
         
         contacts: [
             {
@@ -213,8 +214,8 @@ const { createApp } = Vue
                 message: '',
                 status: ''
             }
+            
         },
 
-
     }
-  }).mount('#app')
+}).mount('#app')
