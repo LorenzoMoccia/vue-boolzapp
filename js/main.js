@@ -204,7 +204,16 @@ const { createApp } = Vue
             this.currentContact = i;
         },
 
-        
+        newMessage(){
+            this.newMessage.status = "sent";
+            this.contacts[this.currentContact].messages.push(this.newMessage);
+
+            this.newMessage = {
+                date: '',
+                message: '',
+                status: ''
+            }
+        },
 
 
     }
