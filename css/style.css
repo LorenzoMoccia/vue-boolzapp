@@ -217,8 +217,15 @@ i{
 }
 
 .main-footer-container{
-    width: 100%;
+    width: 1000px;
     position: absolute;
-    bottom: 39px;
-    left: 720px;
+    bottom: 55px;
+    left: 730px;
+    display: flex;
+    justify-content: space-around;
 }
+
+.message-input{
+    width: 80%;
+}
+
