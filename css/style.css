@@ -24,9 +24,10 @@ body{
 
 
 
-.debug{
+/*.debug{
     border: 1px dashed black;
 }
+*/
 
 /*-----------
     ASIDE
@@ -182,7 +183,7 @@ i{
 }
 
 .main-chat-container{
-    height: 773px;
+    height: 759px;
     background: url("../img/mine.jpg");
     padding: 70px;
 }
@@ -219,7 +220,7 @@ i{
 .main-footer-container{
     width: 1000px;
     position: absolute;
-    bottom: 55px;
+    bottom: 65px;
     left: 730px;
     display: flex;
     justify-content: space-around;
@@ -229,3 +230,7 @@ i{
     width: 80%;
 }
 
+.send-btn{
+    border: none;
+    background-color: none;
+}
