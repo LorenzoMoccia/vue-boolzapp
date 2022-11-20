@@ -218,6 +218,7 @@ i{
 
 .main-footer-container{
     width: 100%;
-    height: 10px;
-
+    position: absolute;
+    bottom: 39px;
+    left: 720px;
 }
