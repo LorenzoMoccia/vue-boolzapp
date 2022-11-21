@@ -206,6 +206,7 @@ i{
     border-radius: 10px;
     position: relative;
     display: block;
+    overflow-wrap: break-word;
 }
 
 .message-sent{
