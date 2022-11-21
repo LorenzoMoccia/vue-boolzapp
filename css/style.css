@@ -26,8 +26,8 @@ body{
 
 /*.debug{
     border: 1px dashed black;
-}
-*/
+}*/
+
 
 /*-----------
     ASIDE
@@ -121,8 +121,8 @@ i{
 }
 
 .contact-img-container{
-    width: 60px;
-    height: 60px;
+    width: 64px;
+    height: 63px;
     border-radius: 50%;
 }
 
@@ -186,6 +186,7 @@ i{
     height: 759px;
     background: url("../img/mine.jpg");
     padding: 70px;
+    overflow-y: auto;
 }
 
 .message-list{
@@ -219,15 +220,19 @@ i{
 
 .main-footer-container{
     width: 1000px;
+    height: 41px;
     position: absolute;
-    bottom: 65px;
-    left: 730px;
+    bottom: 51px;
+    left: 728px;
     display: flex;
     justify-content: space-around;
+    background-color: #f3eeea;
+    align-items: center;
 }
 
 .message-input{
-    width: 80%;
+    width: 700px;
+    height: 30px;
 }
 
 .send-btn{

@@ -136,7 +136,8 @@
                 </ul>
 
 
-
+            </div>
+            <!----------------/CONTAINER MAIN CHAT------------->
 
                 <!-----------------MAIN FOOTER----------------------->
             <div class="main-footer-container debug">
@@ -144,17 +145,14 @@
                     <i class="fa-regular fa-face-smile" id="smile-icon"></i>
                 </div>
 
-                <input type="text" v-model="newMessage.message" class="message-input" placeholder="Scrivi un messaggio....."></input>
-                
-                
-                    <i class="fa-sharp fa-solid fa-circle-arrow-right input-icon send-icon" @click="newMessage"></i>
-                
+                <form class="chat-input" @submit.prevent="newMessage">
+                    <input type="text" v-model="currentMessage" class="message-input" placeholder="Scrivi un messaggio....."></input>
+                </form>
 
                 <i class="fa-solid fa-microphone"></i>
             </div>
             <!-----------------/MAIN FOOTER----------------------->
-            </div>
-            <!----------------/CONTAINER MAIN CHAT------------->
+            
 
 
             

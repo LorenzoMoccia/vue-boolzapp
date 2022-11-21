@@ -8,7 +8,8 @@ const { createApp } = Vue
         
         currentContact: 0,
         
-
+        currentMessage: "",
+       
         
         contacts: [
             {
@@ -206,15 +207,17 @@ const { createApp } = Vue
         },
 
         newMessage(){
-            this.newMessage.status = "sent";
-            this.contacts[this.currentContact].messages.push(this.newMessage);
+            
+            
 
-            this.newMessage = {
-                date: '',
-                message: '',
-                status: ''
+            let newMessage = {
+                
+                message: this.currentMessage,
+                status: 'sent'
             }
             
+           this.contacts[this.currentContact].messages.push(newMessage);
+           this.currentMessage = "";
         },
 
     }
