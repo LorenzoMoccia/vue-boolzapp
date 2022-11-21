@@ -222,9 +222,11 @@ const { createApp } = Vue
            setTimeout(function(){
                 let newMessage = {
                 date: today.getHours() + ":" + today.getMinutes(),
-                message: this.currentMessage,
+                message: "ok",
                 status: 'received'
-           });
+                
+                }
+           }, 1000);
         },
 
     }
