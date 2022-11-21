@@ -9,7 +9,7 @@ const { createApp } = Vue
         currentContact: 0,
         
         currentMessage: "",
-       
+        searchedLetters: "",
         
         contacts: [
             {
@@ -230,6 +230,7 @@ const { createApp } = Vue
             this.contacts[this.currentContact].messages.push(messageBack);
         }, 1000);
         },
+
 
     }
 }).mount('#app')

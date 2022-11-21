@@ -64,7 +64,7 @@
                 <i class="fa-solid fa-magnifying-glass" id="search"></i>
             </div>
 
-            <input type="text" placeholder="Cerca o inizia una nuova chat" id="searchbar">
+            <input type="search" placeholder="Cerca o inizia una nuova chat" id="searchbar">
         </div>
         <!----------/SEARCH BAR------------------>
 
@@ -81,8 +81,8 @@
                         <small class="last-message-text">{{contact.messages[contact.messages.length-1].message}}</small>
                     </div>
 
-                    <div class="contact-date-message">
-                        {{contacts[currentContact].messages.formattedDate}}
+                    <div class="contact-date-container">
+                        <small>{{contact.messages[contact.messages.length-1].formattedDate}}</small>
                     </div>
                 </div>
             </li>
