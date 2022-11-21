@@ -16,6 +16,7 @@ body{
     justify-content: center;
     align-items: center;
     background: linear-gradient(to top, #dbdbd2 82%, #009688 18%);
+    font-family: 'Lato', sans-serif;
 }
 
 .container{
@@ -198,6 +199,7 @@ i{
     margin-bottom: 50px;
     border-radius: 10px;
     position: relative;
+    display: block;
 }
 
 .message-sent{

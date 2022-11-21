@@ -219,14 +219,16 @@ const { createApp } = Vue
            this.contacts[this.currentContact].messages.push(newMessage);
            this.currentMessage = "";
 
-           setTimeout(function(){
-                let newMessage = {
-                date: today.getHours() + ":" + today.getMinutes(),
+           setTimeout(() => { 
+
+            let messageBack = {
+                formattedDate: today.getHours() + ":" + today.getMinutes(),
                 message: "ok",
                 status: 'received'
-                
-                }
-           }, 1000);
+            }
+
+            this.contacts[this.currentContact].messages.push(messageBack);
+        }, 1000);
         },
 
     }
