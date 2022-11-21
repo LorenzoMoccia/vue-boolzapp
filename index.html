@@ -125,10 +125,11 @@
 
             <!----------------CONTAINER MAIN CHAT------------->
             <div class="main-chat-container debug">
+                <!--MESSAGE CONTAINER-->
                 <div class="message-container">
                 <ul class="message-list">
 
-                    <!--MESSAGE CONTAINER-->
+                    
                     <li v-for="text in contacts[currentContact].messages">
                         <div class="message-container debug" v-bind:class = "(text.status === 'sent')?'message-sent':'message-received'">
                             {{text.message}}
@@ -137,10 +138,10 @@
                             </small>
                         </div>
                     </li>
-                    <!--/MESSAGE CONTAINER-->
+                    
                 </ul>
             </div>
-                
+                <!--/MESSAGE CONTAINER-->
             </div>
             <!----------------/CONTAINER MAIN CHAT------------->
 
