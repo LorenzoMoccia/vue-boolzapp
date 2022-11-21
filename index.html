@@ -78,7 +78,7 @@
                     </div>
 
                     <div class="contact-date-message">
-                        {{contact.messages.formattedDate}}
+                        {{contacts[currentContact].messages.formattedDate}}
                     </div>
                 </div>
             </li>
@@ -125,6 +125,7 @@
 
             <!----------------CONTAINER MAIN CHAT------------->
             <div class="main-chat-container debug">
+                <div class="message-container">
                 <ul class="message-list">
 
                     <!--MESSAGE CONTAINER-->
@@ -138,12 +139,13 @@
                     </li>
                     <!--/MESSAGE CONTAINER-->
                 </ul>
-
-
+            </div>
+                
             </div>
             <!----------------/CONTAINER MAIN CHAT------------->
 
-                <!-----------------MAIN FOOTER----------------------->
+            
+            <!-----------------MAIN FOOTER----------------------->
             <div class="main-footer-container debug">
                 <div class="main-foooter-icon debug">
                     <i class="fa-regular fa-face-smile" id="smile-icon"></i>
@@ -156,8 +158,6 @@
                 <i class="fa-solid fa-microphone"></i>
             </div>
             <!-----------------/MAIN FOOTER----------------------->
-            
-
 
             
         </div>

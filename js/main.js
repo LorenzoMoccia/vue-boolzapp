@@ -211,7 +211,7 @@ const { createApp } = Vue
             let today = new Date();
             
             let newMessage = {
-                date: today.getHours() + ":" + today.getMinutes(),
+                formattedDate: today.getHours() + ":" + today.getMinutes(),
                 message: this.currentMessage,
                 status: 'sent'
             }

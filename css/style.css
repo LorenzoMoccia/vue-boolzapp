@@ -183,7 +183,7 @@ i{
 }
 
 .main-chat-container{
-    height: 759px;
+    height: 741px;
     background: url("../img/mine.jpg");
     padding: 70px;
     overflow-y: auto;
@@ -194,7 +194,6 @@ i{
 }
 
 .message-container{
-    width: 320px;
     padding: 15px;
     margin-bottom: 50px;
     border-radius: 10px;
@@ -219,11 +218,8 @@ i{
 }
 
 .main-footer-container{
-    width: 1000px;
+    width: 100%;
     height: 41px;
-    position: absolute;
-    bottom: 51px;
-    left: 728px;
     display: flex;
     justify-content: space-around;
     background-color: #f3eeea;
