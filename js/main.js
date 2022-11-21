@@ -208,16 +208,23 @@ const { createApp } = Vue
 
         newMessage(){
             
+            let today = new Date();
             
-
             let newMessage = {
-                
+                date: today.getHours() + ":" + today.getMinutes(),
                 message: this.currentMessage,
                 status: 'sent'
             }
             
            this.contacts[this.currentContact].messages.push(newMessage);
            this.currentMessage = "";
+
+           setTimeout(function(){
+                let newMessage = {
+                date: today.getHours() + ":" + today.getMinutes(),
+                message: this.currentMessage,
+                status: 'received'
+           });
         },
 
     }
