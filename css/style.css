@@ -208,6 +208,7 @@ i{
 
 .message-received{
     background-color: white ;
+    width: 200px;
 }
 
 .message-time{
