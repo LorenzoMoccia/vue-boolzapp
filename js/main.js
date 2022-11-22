@@ -7,7 +7,6 @@ const { createApp } = Vue
       return {
         
         currentContact: 0,
-        
         currentMessage: "",
         searchedLetters: "",
         
