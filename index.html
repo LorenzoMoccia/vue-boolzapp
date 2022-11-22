@@ -70,7 +70,7 @@
 
         <!----------CONTACTS--------------------->
         <ul class="contact-list">
-            <li v-for="(contact, index) in contacts" @click="selectContactClick(index)" :class="{active: currentContact === index && currentContact === index}">
+            <li v-for="(contact, index) in contacts" @click="selectContactClick(index)" :class="{active: currentContact === index && currentContact === index}" class="contact-color">
                 <div class="contact-container">
                     <div class="contact-img-container">
                         <img :src="`img/avatar${contact.avatar}.jpg`" alt="" class="contact-img">

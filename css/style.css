@@ -118,11 +118,12 @@ i{
     width: 100%;
 }
 
+
 .contact-container{
     padding: 10px;
     display: flex;
-    background-color: white;
     position: relative;
+    background-color: white;
 }
 
 .contact-date-container{
