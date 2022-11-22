@@ -231,6 +231,18 @@ const { createApp } = Vue
         }, 1000);
         },
 
+        contactSearch(){
+
+            return this.contacts.filter(contact => {
+                if(contact.name.toLowerCase().includes(this.searchedLetters.toLowerCase())){
+                    contact.visible = true;
+                }else{
+                    contact.visible = false;
+                }
+            })
+    
+        },
+    
 
     }
 }).mount('#app')

@@ -64,13 +64,13 @@
                 <i class="fa-solid fa-magnifying-glass" id="search"></i>
             </div>
 
-            <input type="search" placeholder="Cerca o inizia una nuova chat" id="searchbar">
+            <input type="search" placeholder="Cerca o inizia una nuova chat" id="searchbar" placeholder="Cerca o inizia una nuova chat" @keyup="contactSearch" v-model="searchedLetters">
         </div>
         <!----------/SEARCH BAR------------------>
 
         <!----------CONTACTS--------------------->
         <ul class="contact-list">
-            <li v-for="(contact, index) in contacts" @click="selectContactClick(index)" :class="{active: currentContact === index && currentContact === index}" class="contact-color">
+            <li v-for="(contact, index) in contacts" @click="selectContactClick(index)" :class="{active: currentContact === index && currentContact === index}" class="contact-color" v-show="contact.visible === true">
                 <div class="contact-container">
                     <div class="contact-img-container">
                         <img :src="`img/avatar${contact.avatar}.jpg`" alt="" class="contact-img">
